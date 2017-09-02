@@ -11,7 +11,7 @@ class Example extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            startDate: moment()
+            startDate: moment(props.value, 'YYYY-MM-DD')
         };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -24,6 +24,7 @@ class Example extends Component {
 
     render() {
         return <DatePicker
+            dateFormat = "YYYY-MM-DD"
             selected={this.state.startDate}
             onChange={this.handleChange}
             tabIndex ={50}
