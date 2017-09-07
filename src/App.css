@@ -7,12 +7,6 @@
   text-align: center;
 }
 
-
-.react-grid-Cell__value{
-    overflow: visible !important;
-    top : unset !important;
-    transform: unset !important;
-}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
